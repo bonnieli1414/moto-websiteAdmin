@@ -42,6 +42,8 @@ function adminIndexFn() {
   loadingPage.setAttribute("class", "d-none");
   loginPage.setAttribute("class", "d-none");
   adminPage.setAttribute("class", "d-flex");
+  // 清除登入錯誤訊息
+  errClearFn()
 }
 // 畫面出現登入錯誤訊息
 function errRenderFn(message) {

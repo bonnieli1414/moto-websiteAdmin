@@ -239,7 +239,7 @@ const deleteData = (router, id) => {
 // fetch-put(商品/物料/供應商)
 const putData = (router, id) => {
     const myHeaders = setHeaders();
-    // 商品資料修改
+        // 商品資料修改
     if (router.includes("product")) {
         // 物料資料修改 
     } else if (router.includes("BOM")) {
