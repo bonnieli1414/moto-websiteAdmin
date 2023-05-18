@@ -11,8 +11,8 @@ export { getAllData, getOneData, getInventoryData, postData, putData, patchData,
  * 向API傳送與接收資料檔案
  */
 
-// const apiUrl = "https://flaskapp-project.herokuapp.com";
-const apiUrl = "http://127.0.0.1:5000";
+const apiUrl = "https://flaskapp-project.herokuapp.com";
+// const apiUrl = "http://127.0.0.1:5000";
 
 // 設定header資料，並將token存至session
 const setHeaders = () => {

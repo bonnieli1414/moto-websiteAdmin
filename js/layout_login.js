@@ -12,29 +12,30 @@ const navTabContent = document.getElementById("nav-tabContent");
 const adminIndex = document.getElementById("adminIndex");
 const loginTime = document.getElementById("loginTime");
 
-// 取資料的API網址
+// API網址
 const apiUrl = "https://flaskapp-project.herokuapp.com/api/";
-// const apiUrl = "http://127.0.0.1:5000/api/"; //本地端測試
+// 本地端
+// const apiUrl = "http://127.0.0.1:5000/api/";
 
 // 使用正則檢查資料
 const checkMail = /^[A-Za-z0-9-_]+(\.[A-Za-z0-9-_]+)*@[a-z0-9]+(\.[a-z0-9-_]+)*(\.[a-z]{2,})$/;
-// const checkPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[^]{6,12}$/;
 const checkPassword = /^(?=.*[a-z])(?=.*\d)[^]{6,12}$/;
-
 
 // 畫面初始化
 function initFn() {
-  loadingPage.style.visibility = "hidden";
-  loginPage.style.display = "block";
   errClearFn();
+  loadingPage.style.visibility = "hidden";
   adminPage.setAttribute("class", "d-none");
+  loginPage.style.display = "block";
 }
+
 // 等待畫面
 function waitTimeFn() {
   loadingPage.style.visibility = "visible";
   loginPage.style.display = "none";
   adminPage.setAttribute("class", "d-none");
 }
+
 /**
  * 進入管理員首頁畫面
  */
@@ -45,12 +46,13 @@ function adminIndexFn() {
   // 清除登入錯誤訊息
   errClearFn()
 }
+
 // 畫面出現登入錯誤訊息
 function errRenderFn(message) {
   initFn();
   const loginPage = document.getElementById("loginPage");
   const newDiv = document.createElement("h5");
-  const newContent = document.createTextNode(message);
+  // const newContent = textContent.createTextNode(message);
   newDiv.appendChild(newContent);
   newDiv.setAttribute("class", "text-danger");
   const nav = document.querySelector("nav");
