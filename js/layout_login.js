@@ -13,8 +13,8 @@ const adminIndex = document.getElementById("adminIndex");
 const loginTime = document.getElementById("loginTime");
 
 // 取資料的API網址
-// const apiUrl = "https://flaskapp-project.herokuapp.com/api/";
-const apiUrl = "http://127.0.0.1:5000/api/"; //本地端測試
+const apiUrl = "https://flaskapp-project.herokuapp.com/api/";
+// const apiUrl = "http://127.0.0.1:5000/api/"; //本地端測試
 
 // 使用正則檢查資料
 const checkMail = /^[A-Za-z0-9-_]+(\.[A-Za-z0-9-_]+)*@[a-z0-9]+(\.[a-z0-9-_]+)*(\.[a-z]{2,})$/;

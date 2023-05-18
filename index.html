@@ -6,15 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>後台管理系統</title>
-    <link rel="shortcut icon" href="#"/>
+    <link rel="shortcut icon" href="#" />
     <!-- 引入google icon -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- 載入css檔案 -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body onload="initFn()">
-    <!-- 註冊/登入頁面 -->
+    <!-- 註冊/登入頁面開始 -->
     <div id="loginPage" class="text-center mx-auto pt-3" style="max-width: 330px;">
         <h1 class="py-3">後台管理系統</h1>
         <nav>
@@ -63,16 +64,23 @@
             <p class="text-muted">&copy; 2022-2023</p>
         </div>
     </div>
+    <!-- 註冊/登入頁面結束 -->
+
     <!-- loading效果 -->
     <div id="loadingPage"></div>
+    <!-- loading結束 -->
+
+    <!-- 系統登入後頁面開始 -->
     <div id="adminPage" class="d-none">
-        <!-- 登入後的側邊欄 -->
+
+        <!-- 登入後的側邊欄各單位開始 -->
         <aside class="vh-100 bg-light border-end d-flex flex-column align-items-center">
-            <!-- 側邊欄首頁連結 -->
+            
+            <!-- 側邊欄選單首頁連結 -->
             <h4 class="nav text-center">
                 <a href="#" data-title="adminIndex" id="IndexBtn" class="nav-link p-3">後台管理系統</a>
-            </h4>
-            <hr>
+            </h4><hr>
+
             <!-- 側邊欄選單 -->
             <ul class="d-flex flex-column align-items-center" style="overflow-y: auto;">
                 <!-- 訂單管理 -->
@@ -126,8 +134,11 @@
                     </a>
                 </li> -->
             </ul>
+
         </aside>
-        <!-- 主視窗 -->
+        <!-- 登入後的側邊欄各單位結束 -->
+
+        <!-- 登入後的主視窗開始 -->
         <main class="pb-3">
             <!-- 主視窗上方登入欄 -->
             <div class="w-100 bg-white border-bottom d-flex align-items-center sticky-top">
@@ -895,16 +906,19 @@
                 </div>
             </div>
         </main>
+        <!-- 登入後的主視窗結束 -->
+
     </div>
+    <!-- 系統登入後頁面結束 -->
 
     <!-- 引入Bootstrap js 檔案-->
     <script src="./js/bootstrap.bundle.min.js"></script>
     <!-- 引入jQuery CDN-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="./js/layout_login.js"></script>
-    <script type="module" src="./js/state.js"></script>
-    <script type="module" src="./js/layout_aside.js"></script>
-    <script type="module" src="./js/layout_main.js"></script>
+    <script src="js/layout_login.js"></script>
+    <script type="module" src="js/state.js"></script>
+    <script type="module" src="js/layout_aside.js"></script>
+    <script type="module" src="js/layout_main.js"></script>
 </body>
 
 </html>
