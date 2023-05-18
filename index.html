@@ -6,10 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>後台管理系統</title>
-    <link rel="shortcut icon" href="#" />
-    <!-- 引入bootstrap css CDN-->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+    <link rel="shortcut icon" href="#"/>
     <!-- 引入google icon -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -430,147 +427,6 @@
             </div>
             <!-- 編輯商品 -->
             <div id="adminProduct_edit"></div>
-            <!-- <div id="adminProduct_edit" data-child="edit" class="d-block">
-                <div class="px-4 d-flex justify-content-between align-items-center">
-                    <strong class="fs-5 m-2" style="color:blue">商品資料</strong>
-                    <input id="backProductBtn" class="btn btn-secondary btn-sm m-2" type="button" value="返回商品列表"
-                        data-prepage="adminProduct">
-                </div>
-                <div class="container py-2">
-                    <div class="row align-items-center">
-                        <div class="col-3 col-md-2 my-1 text-end">產品分類</div>
-                        <div class="col-9 col-md-2 my-1 text-start">成品</div>
-                        <div class="col-3 col-md-2 my-1 text-end">商品類別</div>
-                        <div class="col-9 col-md-4 my-1 text-start">
-                            手機類
-                        </div>
-                    </div>
-                    <div class="row align-items-center">
-                        <div class="col-3 col-md-2 my-1 text-end">
-                            <label for="addProductName">商品名稱</label>
-                        </div>
-                        <div class="col-9 col-md-9 my-1 text-start">
-                            motorola edge 30
-                        </div>
-                    </div>
-                    <div class="row align-items-center">
-                        <div class="col-3 col-md-2 my-1 text-end">
-                            <label for="floatingTextarea">商品描述</label>
-                        </div>
-                        <div class="col-9 col-md-9 my-1 text-start">
-                            motorola edge 30商品描述
-                        </div>
-                    </div>
-                    <div class="card-groups d-flex flex-wrap justify-content-center form-text">
-                        <div class="card position-relative m-2" style="width: 12rem; height: 190px" data-img="0">
-                            <div class="card-float position-absolute end-0">
-                                <button type="button" class="btn-close" aria-label="Close" data-delete="0"></button>
-                            </div>
-                            <img src="https://motorolatw.vtexassets.com/arquivos/ids/155657-1200-auto?width=1200&amp;height=auto&amp;aspect=true"
-                                class="card-img-top">
-                        </div>
-
-                        <div class="card position-relative m-2" style="width: 12rem; height: 190px" data-img="1">
-                            <div class="card-float position-absolute end-0">
-                                <button type="button" class="btn-close" aria-label="Close" data-delete="1"></button>
-                            </div>
-                            <img src="https://motorolatw.vtexassets.com/arquivos/ids/155657-1200-auto?width=1200&amp;height=auto&amp;aspect=true"
-                                class="card-img-top">
-                        </div>
-                    </div>
-
-                    <div id="pictureDemo" style="text-align: center;"><img style="height: 190px;"
-                            src="https://motorolatw.vtexassets.com/arquivos/ids/155679/Motorola-edge-30-pdp-render-Silence-12-bcxm87y2.png?v=637879325266470000"></img>
-                    </div>
-                    <div class="row align-items-center">
-                        <div class="col-3 col-md-2 my-1 text-end">
-                            <label for="productPicDemo">&emsp;商品圖</label>
-                        </div>
-                        <div class="col-9 col-md-9 my-1 text-start d-flex">
-                            <input type="text" id="productPicDemo" class="form-control shadow-none mx-1"
-                                placeholder="https://motorolatw.vtexassets.com/arquivos/ids/155679/Motorola-edge-30-pdp-render-Silence-12-bcxm87y2.png?v=637879325266470000">
-                            <div>
-                                <input id="productPicDemo_add" type="button" class="btn btn-primary" value="+">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row align-items-center">
-                        <div class="col-3 col-md-2 my-1 text-end">是否上架
-                        </div>
-                        <div class="col-3 col-md-3 my-1">
-                            <div class="switch_sale">
-                                <input type="checkbox" class="switch_sale-checkbox" id="switch_sale" checked>
-                                <label class="switch_sale-label" for="switch_sale">
-                                    <span class="switch_sale-inner"></span>
-                                    <span class="switch_sale-switch"></span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row align-items-center">
-                        <div class="col-3 col-md-2 my-1 text-end">
-                            <label for="addProductPrice">&emsp;&emsp;原價</label>
-                        </div>
-                        <div class="col-9 col-md-4 my-1 text-start">
-                            <input type="number" id="addProductPrice" class="form-control shadow-none">
-                        </div>
-                    </div>
-                    <div class="row align-items-center">
-                        <div class="col-3 col-md-2 my-1 text-end">
-                            <label for="addProductSale">&emsp;&emsp;特價</label>
-                        </div>
-                        <div class="col-9 col-md-4 my-1 text-start">
-                            <input type="number" id="addProductSale" class="form-control shadow-none">
-                        </div>
-                    </div>
-                    <div class="row align-items-center">
-                        <div class="col-3 col-md-2 my-1 text-end">
-                            <label for="addProductInventory">&emsp;庫存量</label>
-                        </div>
-                        <div class="col-9 col-md-4 my-1 text-start">
-                            <input type="number" id="addProductInventory" class="form-control shadow-none">
-                        </div>
-                    </div>
-                    <div class="row align-items-center">
-                        <div class="col-3 col-md-2 my-1 text-end">
-                            <label for="addProductSupplier">&emsp;供應商</label>
-                        </div>
-                        <div class="col-9 col-md-4 my-1 text-start">
-                            <select id="addProductSupplier" class="form-select shadow-sm" aria-label="Default select">
-                                <option selected>選擇</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row align-items-center justify-content-end justify-content-md-start">
-                        <div class="col-3 col-md-2 my-1 text-end">
-                            <label for="">物料清單</label>
-                        </div>
-                        <div class="col-9 col-md-4 my-1 text-start">
-                            <select id="adminProduct_addBOMListName" class="form-select shadow-sm"
-                                aria-label="Default select">
-                                <option selected>選擇</option>
-                            </select>
-                        </div>
-                        <div class="col-6 col-md-3 my-1 text-start">
-                            <input type="number" id="adminProduct_addBOMListNum" class="form-control shadow-none">
-                        </div>
-                        <div class="col-3 col-md-2 my-1 text-start">
-                            <input id="adminProduct_addBOMBtn" type="button" class="btn btn-primary" value="+"
-                                style="width:38px; height:38px;">
-                        </div>
-                    </div>
-                    <div id="adminProduct_addBOMListText" class="form-text"></div>
-                    <br><br><br><br><br><br><br><br>
-                    <div class="row align-items-center justify-content-end px-4">
-                        <div class="col my-1 text-end">
-                            <input id="adminProductClear" type="button" class="btn btn-outline-secondary" value="重置"
-                                data-reset="adminProduct_add">
-                            <input id="adminProductSend" type="button" class="btn btn-outline-primary" value="送出"
-                                data-send="adminProduct_add">
-                        </div>
-                    </div>
-                </div>
-            </div> -->
             <!-- 物料列表 -->
             <div id="adminBOM" class="d-none">
                 <div class="px-4 d-flex justify-content-between align-items-center">
@@ -603,21 +459,7 @@
                                         <th scope="col">操作</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <!-- <tr scope="row">
-                                        <td>
-                                            <input type="checkbox" id="">
-                                        </td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr> -->
-                                </tbody>
+                                <tbody></tbody>
                             </table>
                         </div>
                     </div>
@@ -926,18 +768,7 @@
                                         <th scope="col">操作</th>
                                     </tr>
                                 </thead>
-                                <tbody id="adminSupplierListContent">
-                                    <!-- <tr scope="row">
-                                        <td>
-                                            <input type="checkbox">
-                                        </td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr> -->
-                                </tbody>
+                                <tbody id="adminSupplierListContent"></tbody>
                             </table>
                         </div>
                     </div>
@@ -1039,18 +870,7 @@
                                         <th scope="col">建立日期</th>
                                     </tr>
                                 </thead>
-                                <tbody id="adminSupplierListContent">
-                                    <!-- <tr scope="row">
-                                        <td>
-                                            <input type="checkbox">
-                                        </td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr> -->
-                                </tbody>
+                                <tbody id="adminSupplierListContent"></tbody>
                             </table>
                         </div>
                     </div>
@@ -1077,10 +897,7 @@
         </main>
     </div>
 
-    <!-- 引入Bootstrap js CDN-->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script> -->
+    <!-- 引入Bootstrap js 檔案-->
     <script src="./js/bootstrap.bundle.min.js"></script>
     <!-- 引入jQuery CDN-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
